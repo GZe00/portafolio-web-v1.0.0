@@ -232,6 +232,12 @@ h2{
     background-size: contain;
     background-position-x: center;
 }
+.s-c-sharp{
+    background-image: url(../assets/languajes/c-sharp.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+}
 
 
 .s-box-text{
@@ -269,6 +275,9 @@ h2{
 }
 .t-R{
     background-color: #1D64B6;
+}
+.t-c-sharp{
+    background-color: #9B4F97;
 }
 
 
