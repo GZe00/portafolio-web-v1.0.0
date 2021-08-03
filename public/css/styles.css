@@ -25,9 +25,13 @@
 /*==========================================================================================*/
 
 .nav{
+    position: sticky;
+    top: 0;
+    /* margin-top: 1px; */
     height: 8vh;
     width: 100%;
     background-color: #000000;
+    z-index: 20;
 }
 
 .nav ul{
@@ -56,7 +60,7 @@
 
 .presentation{
     position: relative;
-    min-height: calc(max-content + 5vh);
+    height: max-content;
     /* height: auto; */
     width: 100%;
     display: flex;
@@ -66,16 +70,20 @@
     /* background: #F2F2F2F2; */
 }
 
-/* .presentation-blur{
+.presentation-blur{
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgb(247, 247, 247);
-    filter: blur(6px);
-    z-index: -1;
-} */
+    background-image: url("/public/assets/images/presentation.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* filter: blur(2px); */
+    opacity: .9235;
+    z-index: 0;
+}
 .presentation-me{
     display: flex;
     flex-direction: column;
@@ -83,17 +91,23 @@
     align-items: center;
     width: 55%;
     height: auto;
-    margin: 90px;
+    margin: 70px;
+    padding-bottom: 20px;
+    z-index: 1;
     /* color: #FFFFFF; */
     /* background-color: deeppink; */
 }
 
 .presentation-me .pre-img img{
-    width: 100%;
+    width: 90%;
     height: auto;
     padding: 20px;
     border-radius: 30%;         /*40 o 50?*/
-    border: 10px dotted #000000;
+    
+}
+
+.pre-me{
+    color: #DCDCDC;
 }
 
 .presentation-me .pre-me{
@@ -112,6 +126,10 @@
 .presentation-me .pre-me h4{
     font-family: 'Playfair Display', serif;
     font-size: 1.2rem;
+    width: max-content;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #DCDCDC;
 }
 
 /*==========================================================================================*/
@@ -418,7 +436,7 @@ h2{
 /*==========================================================================================*/
 
 .end-presentation{
-    height: 100vh;          /*Va a variar, no 100vh*/
+    height: max-content;          /*Va a variar, no 100vh*/
     width: 100%;
     background-color: rgb(51, 51, 51);
 }
@@ -431,12 +449,59 @@ h2{
     width: 100%;
     height: 60%;
     background-color: rgb(51, 51, 51);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
 }
 
+.f1-social h3, .f1-contact h3{
+    text-align: center;
+}
+
+.f1-social{
+    min-width: 40%;
+    height: 95%;
+    background-color: brown;
+}
+
+.social{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.social a p{
+    color: #F2F2F2;
+    font-size: 18px;
+}
+
+.social img{
+    width: 64px;
+}
+
+.f1-contact{
+    min-width: 55%;
+    height: 95%;
+    background-color: rgb(52, 165, 42);
+}
+
+
+
 .footer-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 40px;
     width: 100%;
-    height: 30%;
+    height: 10vh;
     background-color: #000000;
+    color: #F2F2F2F2;
 }
 
 /*==========================================================================================*/
+
